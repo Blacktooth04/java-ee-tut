@@ -3,12 +3,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.lilljedahl.jaxb</groupId>
-	<artifactId>JAXBDemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+    <parent>
+        <groupId>com.lilljedahl.jaxb</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
 
-	<name>jaxb-xjc</name>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jaxbxjc</artifactId>
+    <name>jax xjc</name>
+    <packaging>jar</packaging>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -50,19 +56,4 @@
 		</plugins>
 	</build>
 
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
-		<dependency>
-			<groupId>javax.activation</groupId>
-			<artifactId>activation</artifactId>
-			<version>1.1.1</version>
-		</dependency>
-
-	</dependencies>
 </project>
